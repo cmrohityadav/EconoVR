@@ -12,18 +12,36 @@ type HomeProps = NativeStackScreenProps<RootStackParamList, 'Home'>
 //home page
 const Home = ({navigation}: HomeProps) => {
   return (
+    <>
     <View style={styles.container}>
-      <Text style={styles.smallText}>Home Screen</Text>
-      <Button
+      <Text style={styles.smallText}>Welcome to EconoVR</Text>
+      <View   style={styles.btn} >
+      <Button 
       title='Login'
       
-      onPress={() => navigation.push('Details', {
+      onPress={() => navigation.push('Login', {
         productId: "86"
       })}
 
       />
+      </View>
+
+
+      {/* Sign Up */}
+      <View   style={styles.btn} >
+      <Button
+      title='Signup'
+      
+      onPress={() => navigation.push('Signup', {
+        productId: "80"
+      })}
+
+      />
+      </View>
       
     </View>
+
+    </>
   )
 }
 
@@ -37,5 +55,9 @@ const styles = StyleSheet.create({
     },
     smallText: {
         color: "#000000"
+    },
+    btn:{
+        margin:2,
+        width:100,
     }
 })

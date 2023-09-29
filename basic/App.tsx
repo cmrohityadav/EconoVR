@@ -18,13 +18,16 @@ import {createNativeStackNavigator} from "@react-navigation/native-stack"
 
 //screens
 import Home from './components/screens/Home';
-import Details from './components/screens/Details';
+import Login from './components/screens/Login';
+import Signup from './components/screens/Signup';
+
 
 
 
 export type RootStackParamList = {
   Home: undefined;
-  Details: {productId: string}
+  Login: {productId: string}
+  Signup:{productId:string}
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>()
@@ -39,14 +42,21 @@ function App(): JSX.Element {
         name='Home'
         component={Home}
         options={{
-          title: "EconoVR"
+          title: "Home"
         }}
         />
         <Stack.Screen
-        name='Details'
-        component={Details}
+        name='Login'
+        component={Login}
         options={{
-          title: "Product Details"
+          title: "Login page"
+        }}
+        />
+        <Stack.Screen
+        name='Signup'
+        component={Signup}
+        options={{
+          title: "Signup page"
         }}
         />
         
