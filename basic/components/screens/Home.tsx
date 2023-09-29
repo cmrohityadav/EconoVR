@@ -7,6 +7,9 @@ import {RootStackParamList} from '../../App'
 
 type HomeProps = NativeStackScreenProps<RootStackParamList, 'Home'>
 
+
+
+//home page
 const Home = ({navigation}: HomeProps) => {
   return (
     <View style={styles.container}>
