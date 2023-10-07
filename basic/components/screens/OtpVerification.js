@@ -4,7 +4,7 @@ import Input from './Input';
 import LinearGradient from 'react-native-linear-gradient';
 
 
-const Signup= ({navigation}) => (
+const OtpVerification= ({navigation}) => (
   <View style={styles.container}>
 
 
@@ -31,6 +31,7 @@ const Signup= ({navigation}) => (
           marginTop: -20,
           paddingVertical: 20,
           paddingHorizontal: 15,
+            height:390,
         }}>
 
         {/* title main container */}
@@ -98,30 +99,33 @@ const Signup= ({navigation}) => (
 
 
           </View>
-          {/* signup Msg */}
+          {/* verify msg Msg */}
           <View>
                 <Text style={{textAlign:'centre', color:'#6C6C6C'}}>
-                Sign Up to create an account 
+                Verify your Email adddress
                 </Text>
-              </View>
+                
+                
+            </View>
+            <View>
+                <Text style={{textAlign:'centre', color:'#6C6C6C'}}>
+                Enter the OTP sent to ****ple@gmail.com
+                </Text>
+                
+                
+            </View>
         </View>
+
+        
+
+        
 
 
 
 
 
         {/* username input */}
-        <Input title="Username" placeholder="demo" keyboard="default" />
-        <Input title="Email" placeholder="demo@example.com" keyboard="email-address" />
-        <Input
-          title="Password"
-          placeholder="********"
-          keyboard="default"
-          is_password={true}
-        />
-        {/* <Text style={{ color: '#03bafc', fontSize: 16, textAlign: 'right' }}>
-          Forgot Password?
-        </Text> */}
+       
         <LinearGradient
           onPress={() => { }}
           colors={['#141414','#141414','#141414']}
@@ -138,17 +142,16 @@ const Signup= ({navigation}) => (
             marginBottom: 10,
             padding:25,
           }}>
-          <Text style={{ color: 'white', fontSize: 19 }}
-          onPress={() => navigation.navigate('OtpVerification')}
-          >Signup</Text>
+          <Text style={{ color: 'white', fontSize: 19 }
+          } 
+          onPress={() => navigation.navigate('OtpSucess')}
+          
+          >Submit</Text>
         </LinearGradient>
-        <Text style={{ color: '#0C0C0C', fontSize: 16, textAlign: 'center' }}>
-        Already have an account? {' '}
-          <Text onPress={() => navigation.navigate('Login')}>Login</Text>
-        </Text>
+       
       </View>
 
-      {/* <Text style={styles.text}>Inside</Text> */}
+   
 
 
     </ImageBackground>
@@ -175,4 +178,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Signup;
+export default OtpVerification;
