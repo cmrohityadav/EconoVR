@@ -3,7 +3,7 @@ import { ImageBackground, Image, StyleSheet, Text, View, TextInput, } from 'reac
 import Input from './Input';
 import LinearGradient from 'react-native-linear-gradient';
 
-const Login2 = () => {
+const Login2 = (navigation) => {
     return (
         <View>
 
@@ -60,7 +60,7 @@ const Login2 = () => {
 
                         </View>
                         <View style={{ backgroundColor: '#081122', marginLeft:45, width: 232, height: 40, borderRadius: 20, justifyContent: 'center', marginTop: 20,}}>
-                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}>SUBMIT</Text>
+                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}>LOGIN</Text>
                         </View>
 
                         {/* Already have an account? Login */}
