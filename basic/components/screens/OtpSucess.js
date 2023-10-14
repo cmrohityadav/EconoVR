@@ -58,7 +58,9 @@ const OtpSucess = ({navigation}) => {
 
                        
                         <View style={{ backgroundColor: '#081122', marginLeft:20, width: 280, height: 40, borderRadius: 20, justifyContent: 'center', marginTop: 20,}}>
-                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}>GO TO DASHBOARD</Text>
+                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}
+                            onPress={() => navigation.navigate('Dashboard')}
+                            >GO TO DASHBOARD</Text>
                         </View>
 
                        

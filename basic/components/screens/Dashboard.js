@@ -5,6 +5,7 @@ const Dashboard = ({navigation}) => {
   return (
     <View>
       <Text>Dashboard</Text>
+      
     </View>
   )
 }

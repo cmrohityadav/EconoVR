@@ -61,7 +61,9 @@ const Login2 = ({navigation}) => {
 
                         </View>
                         <View style={{ backgroundColor: '#081122', marginLeft:20, width: 280, height: 40, borderRadius: 20, justifyContent: 'center', marginTop: 20,}}>
-                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}>LOGIN</Text>
+                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}
+                            onPress={() => navigation.navigate('Dashboard')}
+                            >LOGIN</Text>
                         </View>
 
                         {/* Already have an account? Login */}
