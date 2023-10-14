@@ -9,7 +9,7 @@ import Signup from './components/screens/Signup';
 import OtpVerification from './components/screens/OtpVerification';
 import OtpSucess from './components/screens/OtpSucess';
 import Login2 from './components/screens/Login2';
-
+import Forgot from './components/screens/Forgot';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +22,8 @@ function App() {
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="OtpVerification" component={OtpVerification} />
         <Stack.Screen name="OtpSucess" component={OtpSucess} />
+        <Stack.Screen name="Forgot" component={Forgot} />
+        
 
       </Stack.Navigator>
     </NavigationContainer>

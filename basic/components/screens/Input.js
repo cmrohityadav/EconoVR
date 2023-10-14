@@ -3,7 +3,7 @@ import React from 'react'
 
 const Input = ({title, placeholder, keyboard, is_password}) => {
   return (
-    <View style={{marginVertical: 10}}>
+    <View style={{marginVertical: 2}}>
           <Text style={{fontSize: 16, color: '#6C6C6C'}}>{title}</Text>
           <TextInput
             placeholder={placeholder}
