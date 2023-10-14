@@ -10,6 +10,9 @@ import OtpVerification from './components/screens/OtpVerification';
 import OtpSucess from './components/screens/OtpSucess';
 import Login2 from './components/screens/Login2';
 import Forgot from './components/screens/Forgot';
+import OtpForForgotPassword from './components/screens/OtpForForgotPassword';
+import SetupNewPassword from './components/screens/SetupNewPassword';
+import OtpSucessForForgot from './components/screens/OtpSucessForForgot';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +26,9 @@ function App() {
         <Stack.Screen name="OtpVerification" component={OtpVerification} />
         <Stack.Screen name="OtpSucess" component={OtpSucess} />
         <Stack.Screen name="Forgot" component={Forgot} />
+        <Stack.Screen name="OtpForForgotPassword" component={OtpForForgotPassword} />
+        <Stack.Screen name="SetupNewPassword" component={SetupNewPassword} />
+        <Stack.Screen name="OtpSucessForForgot" component={OtpSucessForForgot} />
         
 
       </Stack.Navigator>
