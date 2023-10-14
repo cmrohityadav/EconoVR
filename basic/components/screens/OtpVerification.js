@@ -60,7 +60,9 @@ const OtpVerification = ({navigation}) => {
 
                         </View>
                         <View style={{ backgroundColor: '#081122', marginLeft:20, width: 280, height: 40, borderRadius: 20, justifyContent: 'center', marginTop: 20,}}>
-                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}>SUBMIT</Text>
+                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}
+                                 onPress={() => navigation.navigate('OtpSucess')}
+                            >SUBMIT</Text>
                         </View>
 
                        
