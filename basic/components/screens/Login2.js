@@ -32,7 +32,7 @@ const Login2 = ({navigation}) => {
 
                         {/* value vision title */}
                         <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 34 }}>
-                            <View style={{ marginRight: 6 }}><Text style={{ color: '#34C9F9', fontSize: 30 ,fontWeight:'bold',fontFamily:'MontserratBlack-3zOvZ'}}>value</Text></View>
+                            <View style={{ marginRight: 6 }}><Text style={{ color: '#34C9F9', fontSize: 30 ,fontWeight:'bold',fontFamily:''}}>value</Text></View>
                             <View style={{ backgroundColor: '#34C9F9', borderRadius: 12, width: 100 }}><Text style={{ fontSize: 30, textAlign: 'center',fontWeight:'bold',color:'white'}}>vision</Text></View>
 
                         </View>
@@ -54,7 +54,7 @@ const Login2 = ({navigation}) => {
                                 keyboard="default"
                                 is_password={true}
                             />
-                            <Text style={{ color: '#03bafc', fontSize: 16, textAlign: 'right' }}  onPress={() => navigation.navigate('Forgot')}>
+                            <Text style={{ color: '#03bafc', fontSize: 16, textAlign:'right',marginVertical:19 }}  onPress={() => navigation.navigate('Forgot')}>
                                 Forgot Password?
                             </Text>    
 
