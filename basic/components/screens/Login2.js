@@ -32,7 +32,7 @@ const Login2 = ({navigation}) => {
 
                         {/* value vision title */}
                         <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 34 }}>
-                            <View style={{ marginRight: 6 }}><Text style={{ color: '#34C9F9', fontSize: 30 ,fontWeight:'bold'}}>value</Text></View>
+                            <View style={{ marginRight: 6 }}><Text style={{ color: '#34C9F9', fontSize: 30 ,fontWeight:'bold',fontFamily:'MontserratBlack-3zOvZ'}}>value</Text></View>
                             <View style={{ backgroundColor: '#34C9F9', borderRadius: 12, width: 100 }}><Text style={{ fontSize: 30, textAlign: 'center',fontWeight:'bold',color:'white'}}>vision</Text></View>
 
                         </View>
