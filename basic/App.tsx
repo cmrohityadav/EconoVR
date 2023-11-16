@@ -13,7 +13,7 @@ import Forgot from './components/screens/Forgot';
 import OtpForForgotPassword from './components/screens/OtpForForgotPassword';
 import SetupNewPassword from './components/screens/SetupNewPassword';
 import OtpSucessForForgot from './components/screens/OtpSucessForForgot';
-import Dashboard from './components/screens/Dashboard';
+import Dashboard from './components/Dashboard/Dashboard';
 import Login3 from './components/screens/Login3';
 
 const Stack = createNativeStackNavigator();

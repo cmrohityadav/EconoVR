@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import StartPage from './StartPage'
 
 const Dashboard = ({navigation}) => {
   return (
     <View>
-      <Text>Dashboard</Text>
+      <StartPage/>
       
     </View>
   )
