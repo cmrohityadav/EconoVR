@@ -1,4 +1,4 @@
-import { View, Text, Image, TextInput, ScrollView } from 'react-native'
+import { View, Text, Image, TextInput, ScrollView, ImageBackground } from 'react-native'
 import React from 'react'
 import Input from '../../screens/Input'
 
@@ -44,33 +44,33 @@ const DashboardHome = () => {
                 </View>
 
                 {/* vr world */}
-                <View style={{marginTop:10}}>
+                <View style={{ marginTop: 10 }}>
                     <ScrollView horizontal={true} style={{}}>
 
-                        <View style={{ height: 150,width:150,marginRight:20,}}>
+                        <View style={{ height: 150, width: 150, marginRight: 20, }}>
                             <Image
                                 source={require('../img/vrw.png')}
-                                style={{ height: "100%", width:150,borderRadius:15}}
+                                style={{ height: "100%", width: 150, borderRadius: 15 }}
                             />
 
                         </View>
-                        <View style={{ height: 150,width:150,marginRight:20,}}>
+                        <View style={{ height: 150, width: 150, marginRight: 20, }}>
                             <Image
                                 source={require('../img/vrw2.png')}
-                                style={{ height: "100%", width:150,borderRadius:15}}
+                                style={{ height: "100%", width: 150, borderRadius: 15 }}
                             />
 
                         </View>
-                        <View style={{ height: 150,width:150,marginRight:20,}}>
+                        <View style={{ height: 150, width: 150, marginRight: 20, }}>
                             <Image
                                 source={require('../img/vrw3.png')}
-                                style={{ height: "100%", width:150,borderRadius:15}}
+                                style={{ height: "100%", width: 150, borderRadius: 15 }}
                             />
 
                         </View>
-                        
-                        
-                        
+
+
+
                     </ScrollView>
                 </View>
 
@@ -81,21 +81,52 @@ const DashboardHome = () => {
 
             {/* Explore categories */}
 
-            <View>
+            <View style={{ marginTop: 20, marginHorizontal: 20 }}>
                 {/* title */}
                 <View>
-
+                    <Text style={{ color: '#FFFFFF', fontSize: 16 }}>Explore categories</Text>
 
                 </View>
 
                 {/* items  */}
-                <View>
+                <View >
+                <ImageBackground source={require('../img/i1.png')}
+                resizeMode="cover" style={{ height: 130, width: "100%" }}
+                >
+                
+                <View style={{marginTop:50,marginLeft:15}}>
+                    <Text style={{color:'#011B2A',fontSize:20}}>
+                    Random VR World
+                    </Text>
+                    <Text  style={{color:'#000000CC',fontSize:15}}>
+                    Subtitle goes here
+                    </Text>
+                </View>
 
+                </ImageBackground>
 
                 </View>
 
+
+                {/* 2nd itme */}
                 <View>
-                    
+
+                <ImageBackground source={require('../img/i2.png')}
+                resizeMode="cover" style={{ height: 140, width: "100%" }}
+                >
+                
+                <View style={{marginTop:50,marginLeft:15}}>
+                    <Text style={{color:'#011B2A',fontSize:20}}>
+                    VR Environement
+                    </Text>
+                    <Text  style={{color:'#000000CC',fontSize:15}}>
+                    Subtitle goes here
+                    </Text>
+                </View>
+
+                </ImageBackground>
+
+
                 </View>
             </View>
 
