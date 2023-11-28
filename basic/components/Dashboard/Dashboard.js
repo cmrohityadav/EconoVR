@@ -5,7 +5,7 @@ import StartPage from './StartPage'
 const Dashboard = ({navigation}) => {
   return (
     <View>
-      <StartPage/>
+      
       
     </View>
   )
