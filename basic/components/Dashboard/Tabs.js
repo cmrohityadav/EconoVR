@@ -3,18 +3,117 @@ import DashboardHome from "./ScreenForDashBoard/DashboardHome";
 import Profile from "./ScreenForDashBoard/Profile";
 import Settings from "./ScreenForDashBoard/Settings";
 import Logout from "./ScreenForDashBoard/Logout";
+import { View, Text, Image } from 'react-native'
 
-const Tab=createBottomTabNavigator();
 
-const Tabs=()=>{
+const Tab = createBottomTabNavigator();
+
+const Tabs = () => {
 
     return (
 
-        <Tab.Navigator screenOptions={{headerShown:false}}>
-            <Tab.Screen name="DashboardHome" component={DashboardHome}/>
-            <Tab.Screen name="Profile" component={Profile}/>
-            <Tab.Screen name="Settings" component={Settings}/>
-            <Tab.Screen name="Logout" component={Logout}/>
+        <Tab.Navigator screenOptions={{ headerShown: false ,tabBarStyle:{
+            position:'absolute',
+            borderTopLeftRadius:20,
+            borderTopRightRadius:20,
+            height:60
+        },tabBarShowLabel:false
+        }}  >
+
+        {/* dashboard tab */}
+            <Tab.Screen name="DashboardHome" component={DashboardHome} options={{
+                tabBarIcon: ({ focused }) => (
+                    <View style={{alignItems:'center',justifyContent:'center'}}>
+                        <Image
+
+                            source={require('./img/home.png')}
+                            resizeMode="contain"
+                            style={{
+                                width:25,
+                                height:25,
+                                tintColor:focused ? '#34C9F9':'#081122',
+
+                            }}
+                        />
+                        <Text style={{color:focused? '#34C9F9':'#081122'}}>Dashboard</Text>
+
+
+                    </View>
+                ),
+            }} />
+
+            {/* profile tab */}
+            <Tab.Screen name="Profile" component={Profile}
+            options={{
+                tabBarIcon: ({ focused }) => (
+                    <View style={{alignItems:'center',justifyContent:'center'}}>
+                        <Image
+
+                            source={require('./img/profile.png')}
+                            resizeMode="contain"
+                            style={{
+                                width:25,
+                                height:25,
+                                tintColor:focused ? '#34C9F9':'#081122',
+
+                            }}
+                        />
+                        <Text style={{color:focused? '#34C9F9':'#081122'}}>Profile</Text>
+
+
+                    </View>
+                ),
+            }}
+             />
+
+
+             {/* setting tab */}
+            <Tab.Screen name="Settings" component={Settings}
+            
+            options={{
+                tabBarIcon: ({ focused }) => (
+                    <View style={{alignItems:'center',justifyContent:'center'}}>
+                        <Image
+
+                            source={require('./img/Setting.png')}
+                            resizeMode="contain"
+                            style={{
+                                width:25,
+                                height:25,
+                                tintColor:focused ? '#34C9F9':'#081122',
+
+                            }}
+                        />
+                        <Text style={{color:focused? '#34C9F9':'#081122'}}>Setting</Text>
+
+
+                    </View>
+                ),
+            }} />
+
+
+            {/* logout tab */}
+            <Tab.Screen name="Logout" component={Logout}
+            options={{
+                tabBarIcon: ({ focused }) => (
+                    <View style={{alignItems:'center',justifyContent:'center'}}>
+                        <Image
+
+                            source={require('./img/logout.png')}
+                            resizeMode="contain"
+                            style={{
+                                width:25,
+                                height:25,
+                                tintColor:focused ? '#34C9F9':'#081122',
+
+                            }}
+                        />
+                        <Text style={{color:focused? '#34C9F9':'#081122'}}>Logout</Text>
+
+
+                    </View>
+                ),
+            }} />
         </Tab.Navigator>
     )
 }
