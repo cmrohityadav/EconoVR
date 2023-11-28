@@ -1,13 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import StartPage from './StartPage'
+import {NavigationContainer} from '@react-navigation/native'
+import Tabs from './Tabs'
 
-const Dashboard = ({navigation}) => {
+
+const Dashboard = ({}) => {
   return (
-    <View>
-      
-      
-    </View>
+    <Tabs/>
+    
   )
 }
 
