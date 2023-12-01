@@ -26,7 +26,7 @@ const Settings = () => {
   <View style={{marginTop:150}}>
 
       <View>
-        <View style={{flexDirection:'row',alignItems:'center',marginLeft:25,
+        <View style={{flexDirection:'row',alignItems:'center',marginHorizontal:25,
         borderBottomColor:"white",borderBottomWidth: 1,
         paddingBottom:20
         
