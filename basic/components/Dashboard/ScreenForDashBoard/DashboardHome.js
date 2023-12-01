@@ -1,8 +1,8 @@
-import { View, Text, Image, TextInput, ScrollView, ImageBackground } from 'react-native'
+import { View, Text, Image, TextInput, ScrollView, ImageBackground, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Input from '../../screens/Input'
 
-const DashboardHome = ({navigation}) => {
+const DashboardHome = ({ navigation }) => {
     return (
         <View style={{ backgroundColor: '#081122', height: '100%' }}>
 
@@ -47,27 +47,100 @@ const DashboardHome = ({navigation}) => {
                 <View style={{ marginTop: 10 }}>
                     <ScrollView horizontal={true} style={{}}>
 
-                        <View style={{ height: 150, width: 150, marginRight: 20, }}>
+                        <View style={{
+                            height: 150, width: 160, marginRight: 20,
+                            flexDirection: 'row',
+                            alignItems: 'flex-end'
+                        }}>
                             <Image
                                 source={require('../img/vrw.png')}
-                                style={{ height: "100%", width: 150, borderRadius: 15 }}
+                                style={{ height: '100%', width: 140, borderRadius: 15 ,
+                                
+                                }}
                             />
+                            <View  style={{position:'relative',
+                                    right:30,
+                                    backgroundColor:'black',
+                                    right:40,
+                                    borderRadius:50
+                                    
+                                    }}>
+
+                                <Image source={require('../img/download.png')}
+                                    style={{ height: 40, width: 40 ,
+                                   
+                                  
+                                    
+                                    }}
+                                />
+                            </View>
+
+
 
                         </View>
-                        <View style={{ height: 150, width: 150, marginRight: 20, }}>
+                        <View style={{
+                            height: 150, width: 160, marginRight: 20,
+                            flexDirection: 'row',
+                            alignItems: 'flex-end'
+                        }}>
                             <Image
                                 source={require('../img/vrw2.png')}
-                                style={{ height: "100%", width: 150, borderRadius: 15 }}
+                                style={{ height: '100%', width: 140, borderRadius: 15 ,
+                                
+                                }}
                             />
+                            <View  style={{position:'relative',
+                                    right:30,
+                                    backgroundColor:'black',
+                                    right:40,
+                                    borderRadius:50
+                                    
+                                    }}>
+
+                                <Image source={require('../img/download.png')}
+                                    style={{ height: 40, width: 40 ,
+                                   
+                                  
+                                    
+                                    }}
+                                />
+                            </View>
+
+
 
                         </View>
-                        <View style={{ height: 150, width: 150, marginRight: 20, }}>
+                        <View style={{
+                            height: 150, width: 160, marginRight: 20,
+                            flexDirection: 'row',
+                            alignItems: 'flex-end'
+                        }}>
                             <Image
                                 source={require('../img/vrw3.png')}
-                                style={{ height: "100%", width: 150, borderRadius: 15 }}
+                                style={{ height: '100%', width: 140, borderRadius: 15 ,
+                                
+                                }}
                             />
+                            <View  style={{position:'relative',
+                                    right:30,
+                                    backgroundColor:'black',
+                                    right:40,
+                                    borderRadius:50
+                                    
+                                    }}>
+
+                                <Image source={require('../img/download.png')}
+                                    style={{ height: 40, width: 40 ,
+                                   
+                                  
+                                    
+                                    }}
+                                />
+                            </View>
+
+
 
                         </View>
+                        
 
 
 
@@ -90,23 +163,23 @@ const DashboardHome = ({navigation}) => {
 
                 {/* items  */}
                 <View  >
-                <ImageBackground source={require('../img/i1.png')}
-                resizeMode="cover" style={{ height: 130, width: "100%" }}
-                
-                >
-                
-                <View style={{marginTop:50,marginLeft:15}}>
-                    <Text style={{color:'#011B2A',fontSize:20}} onPress={() => navigation.navigate('StartPage')}>
-                    Random VR World
-                    </Text>
-                    <Text  style={{color:'#000000CC',fontSize:15}}
-                    onPress={() => navigation.navigate('StartPage')}
-                    >
-                    Subtitle goes here
-                    </Text>
-                </View>
+                    <ImageBackground source={require('../img/i1.png')}
+                        resizeMode="cover" style={{ height: 130, width: "100%" }}
 
-                </ImageBackground>
+                    >
+
+                        <View style={{ marginTop: 50, marginLeft: 15 }}>
+                            <Text style={{ color: '#011B2A', fontSize: 20 }} onPress={() => navigation.navigate('StartPage')}>
+                                Random VR World
+                            </Text>
+                            <Text style={{ color: '#000000CC', fontSize: 15 }}
+                                onPress={() => navigation.navigate('StartPage')}
+                            >
+                                Subtitle goes here
+                            </Text>
+                        </View>
+
+                    </ImageBackground>
 
                 </View>
 
@@ -114,24 +187,24 @@ const DashboardHome = ({navigation}) => {
                 {/* 2nd itme */}
                 <View>
 
-                <ImageBackground source={require('../img/i2.png')}
-                resizeMode="cover" style={{ height: 140, width: "100%" }}
-                >
-                
-                <View style={{marginTop:50,marginLeft:15}}>
-                    <Text style={{color:'#011B2A',fontSize:20}} 
-                    onPress={() => navigation.navigate('StartPage')}
+                    <ImageBackground source={require('../img/i2.png')}
+                        resizeMode="cover" style={{ height: 140, width: "100%" }}
                     >
-                    VR Environement
-                    </Text>
-                    <Text  style={{color:'#000000CC',fontSize:15}}
-                    onPress={() => navigation.navigate('StartPage')}
-                    >
-                    Subtitle goes here
-                    </Text>
-                </View>
 
-                </ImageBackground>
+                        <View style={{ marginTop: 50, marginLeft: 15 }}>
+                            <Text style={{ color: '#011B2A', fontSize: 20 }}
+                                onPress={() => navigation.navigate('StartPage')}
+                            >
+                                VR Environement
+                            </Text>
+                            <Text style={{ color: '#000000CC', fontSize: 15 }}
+                                onPress={() => navigation.navigate('StartPage')}
+                            >
+                                Subtitle goes here
+                            </Text>
+                        </View>
+
+                    </ImageBackground>
 
 
                 </View>
