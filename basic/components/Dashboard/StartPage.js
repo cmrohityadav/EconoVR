@@ -3,10 +3,19 @@ import React from 'react'
 
 const StartPage = ({ navigation }) => {
     return (
-        <View style={{ backgroundColor: '#081122' }}>
+        <View style={{ backgroundColor: '#081122' ,height:'100%'}}>
 
             {/* upper container */}
-            <View style={{ height: 600, backgroundColor: '#FFFFFF', borderBottomEndRadius: 100, borderBottomStartRadius: 100, display: 'flex', alignItems: 'center' }}>
+            <View style={{ height: 500, backgroundColor: '#FFFFFF', 
+           
+           display: 'flex', 
+            alignItems: 'center',
+            
+            width: '100%',
+        borderBottomEndRadius: 200, borderBottomStartRadius: 200,
+            
+            
+             }}>
 
                 {/* head set image */}
                 <View style={{ marginTop: 50, display: 'flex', alignItems: 'center', }}>
@@ -31,7 +40,7 @@ const StartPage = ({ navigation }) => {
                 {/* discription */}
                 <View style={{ marginTop: 22, marginHorizontal: 20 }}>
                     <Text style={{ fontSize: 15, color: '#000000' }}>
-                        Description goes here Description goes here Description goes here Description goes here Description goes here Description goes here Description goes here Description goes here Description goes here
+                        Description goes here Description goes here Description goes here Description goes here Description goes here Description goes here Description goes here Description goes here 
                     </Text>
                 </View>
 

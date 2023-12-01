@@ -16,6 +16,7 @@ import OtpSucessForForgot from './components/screens/OtpSucessForForgot';
 import Dashboard from './components/Dashboard/Dashboard';
 import Login3 from './components/screens/Login3';
 import Logout from './components/Dashboard/ScreenForDashBoard/Logout';
+import StartPage from './components/Dashboard/StartPage';
 
 const Stack = createNativeStackNavigator();
 
@@ -35,6 +36,8 @@ function App() {
         <Stack.Screen name="OtpSucessForForgot" component={OtpSucessForForgot} />
         <Stack.Screen name="Dashboard" component={Dashboard} />
         <Stack.Screen name="Logout" component={Logout} />
+        <Stack.Screen name="StartPage" component={StartPage} />
+
         
 
       </Stack.Navigator>

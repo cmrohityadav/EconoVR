@@ -2,7 +2,7 @@ import { View, Text, Image, TextInput, ScrollView, ImageBackground } from 'react
 import React from 'react'
 import Input from '../../screens/Input'
 
-const DashboardHome = () => {
+const DashboardHome = ({navigation}) => {
     return (
         <View style={{ backgroundColor: '#081122', height: '100%' }}>
 
@@ -89,16 +89,19 @@ const DashboardHome = () => {
                 </View>
 
                 {/* items  */}
-                <View >
+                <View  >
                 <ImageBackground source={require('../img/i1.png')}
                 resizeMode="cover" style={{ height: 130, width: "100%" }}
+                
                 >
                 
                 <View style={{marginTop:50,marginLeft:15}}>
-                    <Text style={{color:'#011B2A',fontSize:20}}>
+                    <Text style={{color:'#011B2A',fontSize:20}} onPress={() => navigation.navigate('StartPage')}>
                     Random VR World
                     </Text>
-                    <Text  style={{color:'#000000CC',fontSize:15}}>
+                    <Text  style={{color:'#000000CC',fontSize:15}}
+                    onPress={() => navigation.navigate('StartPage')}
+                    >
                     Subtitle goes here
                     </Text>
                 </View>
@@ -116,10 +119,14 @@ const DashboardHome = () => {
                 >
                 
                 <View style={{marginTop:50,marginLeft:15}}>
-                    <Text style={{color:'#011B2A',fontSize:20}}>
+                    <Text style={{color:'#011B2A',fontSize:20}} 
+                    onPress={() => navigation.navigate('StartPage')}
+                    >
                     VR Environement
                     </Text>
-                    <Text  style={{color:'#000000CC',fontSize:15}}>
+                    <Text  style={{color:'#000000CC',fontSize:15}}
+                    onPress={() => navigation.navigate('StartPage')}
+                    >
                     Subtitle goes here
                     </Text>
                 </View>
