@@ -89,6 +89,7 @@ const DashboardHome = ({ navigation }) => {
                                 
                                 }}
                             />
+                            {/* download icon */}
                             <View  style={{position:'relative',
                                     right:30,
                                     backgroundColor:'black',
