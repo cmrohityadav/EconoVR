@@ -72,6 +72,7 @@ const DashboardHome = ({ navigation }) => {
                                   
                                     
                                     }}
+                                    
                                 />
                             </View>
 

@@ -5,6 +5,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import OtpInputs from 'react-native-otp-inputs';
 
 import OTPInputView from '@twotalltotems/react-native-otp-input'
+import OTP from './OTP';
 
 
 const OtpVerification = ({ navigation }) => {
@@ -57,16 +58,43 @@ const OtpVerification = ({ navigation }) => {
                         </View>
 
                         {/*otp */}
-                        <View style={{ paddingHorizontal: 22, }}>
-                            
-                      
+                        <View style={{ paddingHorizontal: 2, marginBottom: 50 }}>
 
+                            <View style={{ width: '100%', paddingHorizontal: 3, borderColor: 'red' }}>
+
+                                <OTPInputView
+
+                                    style={{ width: '100%', height: 100, paddingHorizontal: 32 }}
+                                    pinCount={4}
+                                    autoFocusOnLoad
+                                    codeInputFieldStyle={{
+                                        width: 30,
+                                        height: 45,
+                                        color: '#f4a135',
+                                        borderWidth: 0,
+                                        borderBottomWidth: 3,
+                                        borderBottomColor: '#111',
+
+                                    }}
+
+                                    codeInputHighlightStyle={{ borderColor: 'black' }}
+                                    onCodeFilled={(code) => console.log(`code is ${code}`)}
+                                />
+
+
+                                <View style={{
+                                    backgroundColor: '#081122', marginLeft: 20, width: 280, height: 40,
+                                    borderRadius: 20, justifyContent: 'center',
+                                    marginTop:50
+                                }}>
+                                    <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}
+                                        onPress={() => navigation.navigate('OtpSucess')}
+                                    >SUBMIT</Text>
+                                </View>
+
+                            </View>
                         </View>
-                        <View style={{ backgroundColor: '#081122', marginLeft: 20, width: 280, height: 40, borderRadius: 20, justifyContent: 'center', marginTop: 20, }}>
-                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}
-                                onPress={() => navigation.navigate('OtpSucess')}
-                            >SUBMIT</Text>
-                        </View>
+
 
 
 
@@ -87,22 +115,22 @@ export default OtpVerification
 
 const styles = StyleSheet.create({
     borderStyleBase: {
-      width: 30,
-      height: 45
+        width: 30,
+        height: 45
     },
-  
+
     borderStyleHighLighted: {
-      borderColor: "#03DAC6",
+        borderColor: "#03DAC6",
     },
-  
+
     underlineStyleBase: {
-      width: 30,
-      height: 45,
-      borderWidth: 0,
-      borderBottomWidth: 1,
+        width: 30,
+        height: 45,
+        borderWidth: 0,
+        borderBottomWidth: 1,
     },
-  
+
     underlineStyleHighLighted: {
-      borderColor: "#03DAC6",
+        borderColor: "#03DAC6",
     },
-  });
+});
