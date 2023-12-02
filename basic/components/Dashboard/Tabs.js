@@ -84,7 +84,7 @@ const Tabs = () => {
 
                             }}
                         />
-                        <Text style={{color:focused? '#34C9F9':'#081122',fontFamily:'Montserrat',}}>Setting</Text>
+                        <Text style={{color:focused? '#34C9F9':'#081122',fontFamily:'Montserrat',}}>Settings</Text>
 
 
                     </View>

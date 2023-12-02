@@ -2,152 +2,76 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/Montserrat.ttf",
-      "sha1": "88f5665acbfbf732cceeee1a40b8c3431a6ca094"
+      "path": "assets/fonts/Montserrat-Black.ttf",
+      "sha1": "ad9c434705a52d90ac5a770e591c2325fb48c2dc"
     },
     {
-      "path": "assets/fonts/MontserratBlack-3zOvZ.ttf",
-      "sha1": "8c3cd1ef054ee735f640013055e8e8d07996d70d"
+      "path": "assets/fonts/Montserrat-BlackItalic.ttf",
+      "sha1": "88f974aa3e6d5e3d1fd563345be9e513809bb143"
     },
     {
-      "path": "assets/fonts/MontserratBlack-ZVK6J.otf",
-      "sha1": "6d07046f64255a245cca7b32ef24f723d317b1ad"
+      "path": "assets/fonts/Montserrat-Bold.ttf",
+      "sha1": "98c66622226025f539568865af96df5175e2979c"
     },
     {
-      "path": "assets/fonts/MontserratBlackItalic-owBnV.ttf",
-      "sha1": "4f9fb6b61be378098c2cfcd4d2e8a7816977941a"
+      "path": "assets/fonts/Montserrat-BoldItalic.ttf",
+      "sha1": "516e381cb5824e976db5cfb69d630a24f27a9ba6"
     },
     {
-      "path": "assets/fonts/MontserratBlackItalic-x3728.otf",
-      "sha1": "6171980297753ede5fc584253ce45702a20e153d"
+      "path": "assets/fonts/Montserrat-ExtraBold.ttf",
+      "sha1": "1e3298f51b4766e2810a4a2c09a2c75c323d5e7e"
     },
     {
-      "path": "assets/fonts/MontserratBold-DOWZd.ttf",
-      "sha1": "4c5b03394078109a583a5ba77c74b045c02e3d9f"
+      "path": "assets/fonts/Montserrat-ExtraBoldItalic.ttf",
+      "sha1": "bf0e072950871eeb704e74f49605847db7ff3a02"
     },
     {
-      "path": "assets/fonts/MontserratBold-p781R.otf",
-      "sha1": "ebfda784aa15aeb2b94531c418a1d8b05a8a802a"
+      "path": "assets/fonts/Montserrat-ExtraLight.ttf",
+      "sha1": "9437f01c62e4f0c1d42b5cf3e244997aafbea70d"
     },
     {
-      "path": "assets/fonts/MontserratBoldItalic-4B3w9.ttf",
-      "sha1": "b2f564fe626cdd83d08860c9f1d88e5d77411698"
+      "path": "assets/fonts/Montserrat-ExtraLightItalic.ttf",
+      "sha1": "6dd4c350b2549a902852ed91cbc2ed87e98f60d7"
     },
     {
-      "path": "assets/fonts/MontserratBoldItalic-ALPax.otf",
-      "sha1": "09b0ea8a26f706abf1fc2f24eda8e6758d6a5e2e"
+      "path": "assets/fonts/Montserrat-Italic.ttf",
+      "sha1": "9b14c390a8b40d941f62a971cb6d7d152e59154a"
     },
     {
-      "path": "assets/fonts/MontserratExtrabold-qZ7Rx.otf",
-      "sha1": "e3aaf3f20f9f08ac10f2fba0f36253fe23f0e74c"
+      "path": "assets/fonts/Montserrat-Light.ttf",
+      "sha1": "9dfbddad5025d8d224b4939e54c1a4ac8ac6015b"
     },
     {
-      "path": "assets/fonts/MontserratExtrabold-VGO60.ttf",
-      "sha1": "278853d38dbd81fb7b254948c80c4b0d93aedf54"
+      "path": "assets/fonts/Montserrat-LightItalic.ttf",
+      "sha1": "c7b6a26d9e3e165d3a079c669f374a4a7e01c0a7"
     },
     {
-      "path": "assets/fonts/MontserratExtraboldItalic-0WDM4.ttf",
-      "sha1": "992af6c638ecbd10f8ea740cd24775721d8ddab2"
+      "path": "assets/fonts/Montserrat-Medium.ttf",
+      "sha1": "25c429296b9d6eb242cba92d1ee7fae484b019cb"
     },
     {
-      "path": "assets/fonts/MontserratExtraboldItalic-JRmqE.otf",
-      "sha1": "19455a16ce3f95c802dbd4f8479d54a32d3b81ec"
+      "path": "assets/fonts/Montserrat-MediumItalic.ttf",
+      "sha1": "0670c90adbabf7dd8a9e4428dced5e0f2a54e97d"
     },
     {
-      "path": "assets/fonts/MontserratExtralight-GOJpy.otf",
-      "sha1": "eab30e039c4d4c9a94f074a420ed5b9b19ba22ad"
+      "path": "assets/fonts/Montserrat-Regular.ttf",
+      "sha1": "bb895d19b8a1fbe1c57fc89cac5da82fdc8fdef4"
     },
     {
-      "path": "assets/fonts/MontserratExtralight-jEZ6j.ttf",
-      "sha1": "e2c7b9c668d36d4ea9f21b4f11c1b6784b114f83"
+      "path": "assets/fonts/Montserrat-SemiBold.ttf",
+      "sha1": "0754a3a23d8d68b0f0558df3109e0df86e968f24"
     },
     {
-      "path": "assets/fonts/MontserratExtralightItalic-eZw6x.ttf",
-      "sha1": "25d6b974aca23aae913099ecca9f1fd1f67e3d42"
+      "path": "assets/fonts/Montserrat-SemiBoldItalic.ttf",
+      "sha1": "ca6ae187de8e41e8c82d282202d5ed98173a5176"
     },
     {
-      "path": "assets/fonts/MontserratExtralightItalic-z8dwG.otf",
-      "sha1": "9b2ca46911ec58d50ebd6799f273e3f231b7ce13"
+      "path": "assets/fonts/Montserrat-Thin.ttf",
+      "sha1": "7061ef5f2b5aef62263dbe728114ccd25014aa4e"
     },
     {
-      "path": "assets/fonts/MontserratItalic-5187x.otf",
-      "sha1": "eef96cbb827522d342de3c98341fb0b650df1f06"
-    },
-    {
-      "path": "assets/fonts/MontserratItalic-WyzEz.ttf",
-      "sha1": "6ef9e488f6e5b51605a4f39f33ffb84b41247e50"
-    },
-    {
-      "path": "assets/fonts/MontserratLight-6YemM.otf",
-      "sha1": "2f9f0864eeac52e4ae30c3296977db0f602e66a6"
-    },
-    {
-      "path": "assets/fonts/MontserratLight-ywBvq.ttf",
-      "sha1": "15d185c04c4afb3f329643c3bc9b697106c3a9ac"
-    },
-    {
-      "path": "assets/fonts/MontserratLightItalic-9YEL7.otf",
-      "sha1": "942418c0c049482beea29a4c0cdb5384a4173d88"
-    },
-    {
-      "path": "assets/fonts/MontserratLightItalic-axBzx.ttf",
-      "sha1": "f923aef565a41dd163f952288e9a6048059b578c"
-    },
-    {
-      "path": "assets/fonts/MontserratMedium-lgZ6e.otf",
-      "sha1": "5a44399804db56767c701fbb07ffc75508cfb63a"
-    },
-    {
-      "path": "assets/fonts/MontserratMedium-nRxlJ.ttf",
-      "sha1": "be0644fcab3959ef5dc76188689c31ae7976cda0"
-    },
-    {
-      "path": "assets/fonts/MontserratMediumItalic-1GPK4.otf",
-      "sha1": "8a0f0b78ba6ae439cb0c409731ac32cfabfbadd5"
-    },
-    {
-      "path": "assets/fonts/MontserratMediumItalic-EaqM4.ttf",
-      "sha1": "28e8b2ac51e6338c5b3bb7b0bebc85ba16fc6db7"
-    },
-    {
-      "path": "assets/fonts/MontserratRegular-BWBEl.ttf",
-      "sha1": "88f5665acbfbf732cceeee1a40b8c3431a6ca094"
-    },
-    {
-      "path": "assets/fonts/MontserratRegular-RpK6l.otf",
-      "sha1": "f2ce81e155aed8c2b40a293bfda86a0fd53e24be"
-    },
-    {
-      "path": "assets/fonts/MontserratSemibold-8M8PB.otf",
-      "sha1": "8677057084ea3e2b559c6f2286846c399fd75271"
-    },
-    {
-      "path": "assets/fonts/MontserratSemibold-Yz368.ttf",
-      "sha1": "94644f3386c7edf1b693ab3701600793e9fd565e"
-    },
-    {
-      "path": "assets/fonts/MontserratSemiboldItalic-OVZXA.ttf",
-      "sha1": "a3913b7738171eec5a26ac514a5296470bb8fe0f"
-    },
-    {
-      "path": "assets/fonts/MontserratSemiboldItalic-rg2B9.otf",
-      "sha1": "d1c2d9225bb53940dc4f3cd2db42f41db6bfab65"
-    },
-    {
-      "path": "assets/fonts/MontserratThin-K7B6D.ttf",
-      "sha1": "6708c7a220e7d84507e680cd443692cec0132aaf"
-    },
-    {
-      "path": "assets/fonts/MontserratThin-MVY6x.otf",
-      "sha1": "7f5ede4351f66d59643bcc400bb2f18107cf3fca"
-    },
-    {
-      "path": "assets/fonts/MontserratThinItalic-2O72w.otf",
-      "sha1": "8b582dc195f1f789ba55761892878e46a68aedf3"
-    },
-    {
-      "path": "assets/fonts/MontserratThinItalic-ZVK3J.ttf",
-      "sha1": "a4f03aade4d627057d5344a59de20fc3ec94f6df"
+      "path": "assets/fonts/Montserrat-ThinItalic.ttf",
+      "sha1": "9455ac7542b843c9bf96db3dd59302d7da39fa3c"
     }
   ]
 }

@@ -171,10 +171,10 @@ const DashboardHome = ({ navigation }) => {
                     >
 
                         <View style={{ marginTop: 50, marginLeft: 15 }}>
-                            <Text style={{ color: '#011B2A', fontSize: 20,fontFamily:'Montserrat', }} onPress={() => navigation.navigate('StartPage')}>
+                            <Text style={{ color:'#011B2A', fontSize: 20,fontFamily:'Montserrat-Regular', }} onPress={() => navigation.navigate('StartPage')}>
                                 Random VR World
                             </Text>
-                            <Text style={{ color: '#000000CC', fontSize: 15,fontFamily:'Montserrat',}}
+                            <Text style={{ color: '#000000CC', fontSize: 15,fontFamily:'Montserrat-Regular',}}
                                 onPress={() => navigation.navigate('StartPage')}
                             >
                                 Subtitle goes here

@@ -15,7 +15,7 @@ const Settings = () => {
   }}>
     {/* setting text */}
     <View style={{ alignItems: 'center', marginTop: 20 }}>
-      <Text style={{ fontSize: 33, color: '#081122',fontFamily:'Montserrat', }}>Setting</Text>
+      <Text style={{ fontSize: 33, color: '#081122',fontFamily:'Montserrat', }}>Settings</Text>
     </View>
 
   </View>
