@@ -40,7 +40,7 @@ const SetupNewPassword = ({navigation}) => {
 
                         {/* login msg */} 
                         <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 23 }}>
-                            <Text style={{ textAlign: 'centre', color: '#6C6C6C' }}>
+                            <Text style={{ textAlign: 'centre', color: '#6C6C6C' ,fontFamily:'Montserrat',}}>
                             Setup new password
                             </Text>
                         </View>
@@ -65,7 +65,7 @@ const SetupNewPassword = ({navigation}) => {
 
                         </View>
                         <View style={{ backgroundColor: '#081122', marginLeft:20, width: 280, height: 40, borderRadius: 20, justifyContent: 'center', marginTop: 70,}}>
-                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}
+                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12,fontFamily:'Montserrat', }}
                             onPress={() => navigation.navigate('OtpSucessForForgot')}
                             >SUBMIT</Text>
                         </View>

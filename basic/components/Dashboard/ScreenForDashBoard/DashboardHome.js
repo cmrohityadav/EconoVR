@@ -24,7 +24,7 @@ const DashboardHome = ({ navigation }) => {
                         source={require('../img/Search.png')}
                         style={{ height: 20, marginLeft: 10 }}
                     />
-                    <TextInput style={{}}
+                    <TextInput style={{fontFamily:'Montserrat',}}
 
                         placeholder="What are you looking for "
                         keyboard="default"
@@ -40,7 +40,7 @@ const DashboardHome = ({ navigation }) => {
             <View style={{ marginTop: 20, marginHorizontal: 20 }}>
 
                 <View>
-                    <Text style={{ color: 'white', fontSize: 20 }}>Trending</Text>
+                    <Text style={{ color: 'white', fontSize: 20,fontFamily:'Montserrat', }}>Trending</Text>
                 </View>
 
                 {/* vr world */}
@@ -159,7 +159,7 @@ const DashboardHome = ({ navigation }) => {
             <View style={{ marginTop: 20, marginHorizontal: 20 }}>
                 {/* title */}
                 <View>
-                    <Text style={{ color: '#FFFFFF', fontSize: 16 }}>Explore categories</Text>
+                    <Text style={{ color: '#FFFFFF', fontSize: 20,fontFamily:'Montserrat', }}>Explore categories</Text>
 
                 </View>
 
@@ -171,10 +171,10 @@ const DashboardHome = ({ navigation }) => {
                     >
 
                         <View style={{ marginTop: 50, marginLeft: 15 }}>
-                            <Text style={{ color: '#011B2A', fontSize: 20 }} onPress={() => navigation.navigate('StartPage')}>
+                            <Text style={{ color: '#011B2A', fontSize: 20,fontFamily:'Montserrat', }} onPress={() => navigation.navigate('StartPage')}>
                                 Random VR World
                             </Text>
-                            <Text style={{ color: '#000000CC', fontSize: 15 }}
+                            <Text style={{ color: '#000000CC', fontSize: 15,fontFamily:'Montserrat',}}
                                 onPress={() => navigation.navigate('StartPage')}
                             >
                                 Subtitle goes here
@@ -193,13 +193,13 @@ const DashboardHome = ({ navigation }) => {
                         resizeMode="cover" style={{ height: 140, width: "100%" }}
                     >
 
-                        <View style={{ marginTop: 50, marginLeft: 15 }}>
+                        <View style={{ marginTop: 50, marginLeft: 15,fontFamily:'Montserrat', }}>
                             <Text style={{ color: '#011B2A', fontSize: 20 }}
                                 onPress={() => navigation.navigate('StartPage')}
                             >
                                 VR Environement
                             </Text>
-                            <Text style={{ color: '#000000CC', fontSize: 15 }}
+                            <Text style={{ color: '#000000CC', fontSize: 15,fontFamily:'Montserrat', }}
                                 onPress={() => navigation.navigate('StartPage')}
                             >
                                 Subtitle goes here

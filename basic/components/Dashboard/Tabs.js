@@ -35,7 +35,7 @@ const Tabs = () => {
 
                             }}
                         />
-                        <Text style={{color:focused? '#34C9F9':'#081122'}}>Dashboard</Text>
+                        <Text style={{color:focused? '#34C9F9':'#081122',fontFamily:'Montserrat',}}>Dashboard</Text>
 
 
                     </View>
@@ -58,7 +58,7 @@ const Tabs = () => {
 
                             }}
                         />
-                        <Text style={{color:focused? '#34C9F9':'#081122'}}>Profile</Text>
+                        <Text style={{color:focused? '#34C9F9':'#081122',fontFamily:'Montserrat',}}>Profile</Text>
 
 
                     </View>
@@ -84,7 +84,7 @@ const Tabs = () => {
 
                             }}
                         />
-                        <Text style={{color:focused? '#34C9F9':'#081122'}}>Setting</Text>
+                        <Text style={{color:focused? '#34C9F9':'#081122',fontFamily:'Montserrat',}}>Setting</Text>
 
 
                     </View>
@@ -108,7 +108,7 @@ const Tabs = () => {
 
                             }}
                         />
-                        <Text style={{color:focused? '#34C9F9':'#081122'}}>Logout</Text>
+                        <Text style={{color:focused? '#34C9F9':'#081122',fontFamily:'Montserrat',}}>Logout</Text>
 
 
                     </View>

@@ -41,13 +41,13 @@ const OtpForForgotPassword = ({ navigation }) => {
 
                         {/* login msg */}
                         <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 23 }}>
-                            <Text style={{ textAlign: 'centre', color: '#6C6C6C' }}>
+                            <Text style={{ textAlign: 'centre', color: '#6C6C6C',fontFamily:'Montserrat', }}>
                                 Verify your Email adddress
                             </Text>
 
                         </View>
                         <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 23 }}>
-                            <Text style={{ textAlign: 'centre', color: '#6C6C6C' }}>
+                            <Text style={{ textAlign: 'centre', color: '#6C6C6C',fontFamily:'Montserrat', }}>
                                 Enter the OTP sent to ****ple@gmail.com
                             </Text>
 
@@ -84,7 +84,7 @@ const OtpForForgotPassword = ({ navigation }) => {
                                     borderRadius: 20, justifyContent: 'center',
                                     marginTop: 50
                                 }}>
-                                    <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}
+                                    <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12,fontFamily:'Montserrat', }}
                                         onPress={() => navigation.navigate('SetupNewPassword')}
                                     >SUBMIT</Text>
                                 </View>

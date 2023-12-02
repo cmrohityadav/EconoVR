@@ -17,7 +17,7 @@ const Profile = () => {
       }}>
         {/* my profile text */}
         <View style={{ alignItems: 'center', marginTop: 20 }}>
-          <Text style={{ fontSize: 33, color: '#081122' }}>My Profile</Text>
+          <Text style={{ fontSize: 33, color: '#081122' ,fontFamily:'Montserrat',}}>My Profile</Text>
         </View>
 
         {/* profile frame */}
@@ -45,6 +45,7 @@ const Profile = () => {
         <TextInput style={{color:"white",
          borderBottomColor: 'white',
               borderBottomWidth: 1,
+              fontFamily:'Montserrat',
         
         }} placeholder='User name' placeholderTextColor={"white"}
           keyboardType='default'
@@ -55,6 +56,7 @@ const Profile = () => {
         <TextInput style={{color:"white",
          borderBottomColor: 'white',
               borderBottomWidth: 1,
+              fontFamily:'Montserrat',
         
         }} placeholder='abc@yourdomain.com' placeholderTextColor={"white"}
           keyboardType='email-address'
@@ -65,6 +67,7 @@ const Profile = () => {
         <TextInput style={{color:"white",
          borderBottomColor: 'white',
               borderBottomWidth: 1,
+              fontFamily:'Montserrat',
         
         }} placeholder='**********' placeholderTextColor={"white"}
           keyboardType='email-address'

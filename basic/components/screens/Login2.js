@@ -32,15 +32,15 @@ const Login2 = ({navigation}) => {
 
                         {/* value vision title */}
                         <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 34 }}>
-                            <View style={{ marginRight: 6 }}><Text style={{ color: '#34C9F9', fontSize: 30 ,fontWeight:'bold',fontFamily:''}}>value</Text></View>
-                            <View style={{ backgroundColor: '#34C9F9', borderRadius: 12, width: 100 }}><Text style={{ fontSize: 30, textAlign: 'center',fontWeight:'bold',color:'white'}}>vision</Text></View>
+                            <View style={{ marginRight: 6 }}><Text style={{ color: '#34C9F9', fontSize: 30 ,fontWeight:'bold',fontFamily:'Montserrat'}}>value</Text></View>
+                            <View style={{ backgroundColor: '#34C9F9', borderRadius: 12, width: 100 }}><Text style={{ fontSize: 30, textAlign: 'center',fontWeight:'bold',color:'white',fontFamily:'Montserrat'}}>vision</Text></View>
 
                         </View>
 
 
                         {/* login msg */} 
                         <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 23 }}>
-                            <Text style={{ textAlign: 'centre', color: '#6C6C6C' }}>
+                            <Text style={{ textAlign:'centre', color: '#6C6C6C',fontFamily:'Montserrat' }}>
                                 Sign in to continue using value vision
                             </Text>
                         </View>
@@ -54,21 +54,21 @@ const Login2 = ({navigation}) => {
                                 keyboard="default"
                                 is_password={true}
                             />
-                            <Text style={{ color: '#03bafc', fontSize: 16, textAlign:'right',marginVertical:19 }}  onPress={() => navigation.navigate('Forgot')}>
+                            <Text style={{ color: '#03bafc', fontSize: 16, textAlign:'right',marginVertical:19,fontFamily:'Montserrat' }}  onPress={() => navigation.navigate('Forgot')}>
                                 Forgot Password?
                             </Text>    
 
 
                         </View>
                         <View style={{ backgroundColor: '#081122', marginLeft:20, width: 280, height: 40, borderRadius: 20, justifyContent: 'center', marginTop: 20,}}>
-                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}
+                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12,fontFamily:'Montserrat', }}
                             onPress={() => navigation.navigate('Dashboard')}
                             >LOGIN</Text>
                         </View>
 
                         {/* Already have an account? Login */}
                         <View style={{ marginTop: 43 }}>
-                            <Text style={{ color: '#6C6C6C', fontSize: 12, textAlign: 'center' }}>
+                            <Text style={{ color: '#6C6C6C', fontSize: 12, textAlign: 'center',fontFamily:'Montserrat', }}>
                                 Dont't have an account?{' '}
                                 <Text style={{ color: '#0C0C0C' }} onPress={() => navigation.navigate('Signup')}>Signup</Text>
                             </Text>

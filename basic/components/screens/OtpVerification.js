@@ -45,13 +45,13 @@ const OtpVerification = ({ navigation }) => {
 
                         {/* login msg */}
                         <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 23 }}>
-                            <Text style={{ textAlign: 'centre', color: '#6C6C6C' }}>
+                            <Text style={{ textAlign: 'centre', color: '#6C6C6C',fontFamily:'Montserrat', }}>
                                 Verify your Email adddress
                             </Text>
 
                         </View>
                         <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 23 }}>
-                            <Text style={{ textAlign: 'centre', color: '#6C6C6C' }}>
+                            <Text style={{ textAlign: 'centre', color: '#6C6C6C' ,fontFamily:'Montserrat',}}>
                                 Enter the OTP sent to ****ple@gmail.2com
                             </Text>
 
@@ -70,12 +70,13 @@ const OtpVerification = ({ navigation }) => {
                                     codeInputFieldStyle={{
                                         width: 30,
                                         height: 45,
-                                        color: '#f4a135',
+                                        color: '#000000',
                                         borderWidth: 0,
                                         borderBottomWidth: 3,
                                         borderBottomColor: '#111',
 
                                     }}
+                                    
 
                                     codeInputHighlightStyle={{ borderColor: 'black' }}
                                     onCodeFilled={(code) => console.log(`code is ${code}`)}
@@ -87,7 +88,7 @@ const OtpVerification = ({ navigation }) => {
                                     borderRadius: 20, justifyContent: 'center',
                                     marginTop:50
                                 }}>
-                                    <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}
+                                    <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12,fontFamily:'Montserrat', }}
                                         onPress={() => navigation.navigate('OtpSucess')}
                                     >SUBMIT</Text>
                                 </View>

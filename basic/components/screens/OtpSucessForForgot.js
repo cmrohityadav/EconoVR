@@ -47,7 +47,7 @@ const OtpSucessForForgot= ({navigation}) => {
 
                         {/* congratulations text */}
                         <View style={{margin:23}}>
-                            <Text style={{textAlign:'center',fontWeight:'900',color:'#000000'}}>
+                            <Text style={{textAlign:'center',fontWeight:'900',color:'#000000',fontFamily:'Montserrat',}}>
                             Congratulations! You’ve successfully changed your password
                             </Text>
                         </View>
@@ -58,7 +58,7 @@ const OtpSucessForForgot= ({navigation}) => {
 
                        
                         <View style={{ backgroundColor: '#081122', marginLeft:20, width: 280, height: 40, borderRadius: 20, justifyContent: 'center', marginTop: 20,}}>
-                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12 }}
+                            <Text style={{ textAlign: 'center', color: '#FBFBFB', fontSize: 12,fontFamily:'Montserrat', }}
                               onPress={() => navigation.navigate('Login2')}
                             >LOGIN</Text>
                         </View>

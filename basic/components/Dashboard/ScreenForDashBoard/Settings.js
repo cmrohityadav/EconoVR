@@ -15,7 +15,7 @@ const Settings = () => {
   }}>
     {/* setting text */}
     <View style={{ alignItems: 'center', marginTop: 20 }}>
-      <Text style={{ fontSize: 33, color: '#081122' }}>Setting</Text>
+      <Text style={{ fontSize: 33, color: '#081122',fontFamily:'Montserrat', }}>Setting</Text>
     </View>
 
   </View>
@@ -34,7 +34,7 @@ const Settings = () => {
           <Image
           source={require('../img/bluetooth.png')}
           />
-          <Text style={{color:'white',marginLeft:25}}>Connect to Bluetooth</Text>
+          <Text style={{color:'white',marginLeft:25,fontFamily:'Montserrat',}}>Connect to Bluetooth</Text>
 
         </View>
 

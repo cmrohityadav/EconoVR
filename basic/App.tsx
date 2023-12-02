@@ -4,7 +4,7 @@ import * as React from 'react';
 import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Login from './components/screens/Login';
+
 import Signup from './components/screens/Signup';
 import OtpVerification from './components/screens/OtpVerification';
 import OtpSucess from './components/screens/OtpSucess';
@@ -14,7 +14,7 @@ import OtpForForgotPassword from './components/screens/OtpForForgotPassword';
 import SetupNewPassword from './components/screens/SetupNewPassword';
 import OtpSucessForForgot from './components/screens/OtpSucessForForgot';
 import Dashboard from './components/Dashboard/Dashboard';
-import Login3 from './components/screens/Login3';
+
 import Logout from './components/Dashboard/ScreenForDashBoard/Logout';
 import StartPage from './components/Dashboard/StartPage';
 import OTP from './components/screens/OTP';
@@ -26,9 +26,10 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown:false}}>
        
+      
        
         <Stack.Screen name="Login2" component={Login2} />
-        <Stack.Screen name="Login" component={Login} />
+        
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="OtpVerification" component={OtpVerification} />
         <Stack.Screen name="OtpSucess" component={OtpSucess} />
@@ -39,7 +40,7 @@ function App() {
         <Stack.Screen name="Dashboard" component={Dashboard} />
         <Stack.Screen name="Logout" component={Logout} />
         <Stack.Screen name="StartPage" component={StartPage} />
-        <Stack.Screen name="OTP" component={OTP} />
+        {/* <Stack.Screen name="OTP" component={OTP} /> */}
 
         
 
