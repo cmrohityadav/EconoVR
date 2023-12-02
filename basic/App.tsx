@@ -17,7 +17,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 
 import Logout from './components/Dashboard/ScreenForDashBoard/Logout';
 import StartPage from './components/Dashboard/StartPage';
-import OTP from './components/screens/OTP';
+import Splash from './components/Splash/Splash';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,8 +28,8 @@ function App() {
        
       
        
+        {/* <Stack.Screen name="splash" component={Splash} /> */}
         <Stack.Screen name="Login2" component={Login2} />
-        
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="OtpVerification" component={OtpVerification} />
         <Stack.Screen name="OtpSucess" component={OtpSucess} />

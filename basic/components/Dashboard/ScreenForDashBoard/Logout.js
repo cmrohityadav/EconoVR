@@ -29,12 +29,12 @@ const Logout = ({ navigation }) => {
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between', gap: 40 }}>
                     <View style={{
                         backgroundColor: '#D9D9D9',
-                        borderRadius: 20,
+                        borderRadius: 10,
                         height: 40,
                         width: 80,
                         alignItems: 'center',
                         justifyContent: 'center',
-                        marginTop: 20
+                        marginTop: 40
 
 
 
@@ -47,12 +47,12 @@ const Logout = ({ navigation }) => {
 
                     <View style={{
                         backgroundColor: '#081122',
-                        borderRadius: 20,
+                        borderRadius: 10,
                         height: 40,
                         width: 80,
                         alignItems: 'center',
                         justifyContent: 'center',
-                        marginTop: 20
+                        marginTop: 40
 
 
 
