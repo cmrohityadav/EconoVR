@@ -32,8 +32,8 @@ const Signup = ({navigation}) => {
 
                         {/* value vision title */}
                         <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 34 }}>
-                            <View style={{ marginRight: 6 }}><Text style={{ color: '#34C9F9', fontSize: 30 ,fontWeight:'bold',fontFamily:'Montserrat',}}>value</Text></View>
-                            <View style={{ backgroundColor: '#34C9F9', borderRadius: 12, width: 100 }}><Text style={{ fontSize: 30, textAlign: 'center',fontWeight:'bold',color:'white',fontFamily:'Montserrat',}}>vision</Text></View>
+                            <View style={{ marginRight: 6 }}><Text style={{ color: '#081122', fontSize: 30 ,fontWeight:'bold',fontFamily:'Montserrat'}}>value</Text></View>
+                            <View style={{ backgroundColor: '#081122', borderRadius: 12, width: 100 }}><Text style={{ fontSize: 30, textAlign: 'center',fontWeight:'bold',color:'white',fontFamily:'Montserrat'}}>vision</Text></View>
 
                         </View>
 

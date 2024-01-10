@@ -28,9 +28,9 @@ function App() {
        
       
        
-        {/* <Stack.Screen name="splash" component={Splash} /> */}
-        <Stack.Screen name="Login2" component={Login2} />
+        <Stack.Screen name="splash" component={Splash} />
         <Stack.Screen name="Signup" component={Signup} />
+        <Stack.Screen name="Login2" component={Login2} />
         <Stack.Screen name="OtpVerification" component={OtpVerification} />
         <Stack.Screen name="OtpSucess" component={OtpSucess} />
         <Stack.Screen name="Forgot" component={Forgot} />
