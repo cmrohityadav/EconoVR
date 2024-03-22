@@ -8,13 +8,11 @@ const cookieOptions = {
     maxAge: 24 * 60 * 60 * 1000,
     httpOnly: true,
     secure: true,
-
-
 }
 const register = async (req, res, next) => {
-    const { fullName, email, password } = req.body
+    const { username, email, password } = req.body
 
-    if (!fullName || !email || !password) {
+    if (!username || !email || !password) {
         return next(new AppError("all field is required", 400))
     }
 
@@ -24,7 +22,7 @@ const register = async (req, res, next) => {
     }
 
     const user = await User.create({
-        fullName,
+        username,
         email,
         password,
     })
@@ -33,33 +31,6 @@ const register = async (req, res, next) => {
         return next(new AppError("User registration fail, try again", 400))
     }
 
-    // todo
-    if (req.file) {
-        // console.log("req.file",req.file)
-        try {
-            const result = await cloudinary.v2.uploader.upload(req.file.path, {
-                folder: "lms",
-                width: 250,
-                height: 250,
-                gravity: 'faces',
-                crop: 'fill'
-            })
-
-            if (result) {
-                user.avatar.public_id = result.public_id;
-                user.avatar.secure_url = result.secure_url;
-
-                // remove from server
-                fs.unlinkSync(`uploads/${req.file.filename}`)
-
-            }
-
-        } catch (error) {
-            return next(
-                new AppError(error || "file not uploaded, please try again ", 500)
-            )
-        }
-    }
 
     await user.save();
 

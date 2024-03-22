@@ -6,9 +6,9 @@ import crypto from "crypto"
 
 
 const userSchema=new Schema({
-    fullName:{
+    username:{
         type:String,
-        required:[true,"Name is required"],
+        required:[true,"Username is required"],
         minLength:[3,"Name must be atleast 3 char"],
         maxLength:[30,"Name cannot be greater than 30"],
         lowercase:true,

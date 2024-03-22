@@ -1,1 +1,1 @@
-export const dbName="lms"
+export const dbName="ValueVision"

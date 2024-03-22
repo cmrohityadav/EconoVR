@@ -4,6 +4,8 @@ import Input from './Input';
 import LinearGradient from 'react-native-linear-gradient';
 
 const Login2 = ({navigation}) => {
+
+    
     return (
         <View>
 
