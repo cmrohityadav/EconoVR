@@ -13,6 +13,7 @@ const userSchema=new Schema({
         maxLength:[30,"Name cannot be greater than 30"],
         lowercase:true,
         trim:true,
+        unique:[true,"Unique username required"]
     },
     email:{
         type:String,

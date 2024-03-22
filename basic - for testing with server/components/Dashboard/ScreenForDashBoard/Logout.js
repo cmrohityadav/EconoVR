@@ -1,7 +1,23 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
+import axios from 'axios';
 
 const Logout = ({ navigation }) => {
+
+    const handleLogout=async()=>{
+        try {
+
+            await axios.get("http://192.168.123.5:5000/api/v1/user/logout")
+            .then(res => {console.log(res.data)
+                    if (res.data.success===true) {
+                        navigation.navigate('Login2')
+                    }
+                })
+                .catch(err => console.log("err", err))
+        } catch (error) {
+            console.log(error)
+        }
+    }
     return (
         <View
             style={{
@@ -41,7 +57,7 @@ const Logout = ({ navigation }) => {
                     }}><Text
                     style={{color:"black"}}
 
-                    onPress={() => navigation.navigate('Login2')}
+                    onPress={handleLogout}
                     >YES</Text></View>
 
 

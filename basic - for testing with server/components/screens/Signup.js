@@ -5,16 +5,20 @@ import axios from 'axios';
 
 const Signup = ({ navigation }) => {
     const [inputUsername, setInputUsername] = useState('');
+    const [errorMessage, setErrorMessage] = useState("")
     const handleInputUsernameChange = (value) => {
         setInputUsername(value);
+        setErrorMessage("")
     };
     const [inputEmail, setInputEmail] = useState('');
     const handleInputEmailChange = (value) => {
         setInputEmail(value);
+        setErrorMessage("")
     };
     const [inputPassword, setInputPassword] = useState('');
     const handleInputPasswordChange = (value) => {
         setInputPassword(value);
+        setErrorMessage("")
     };
     // console.log(inputEmail)
 
@@ -32,11 +36,20 @@ const Signup = ({ navigation }) => {
                      return   navigation.navigate('Login2')
                     }
                 })
-                .catch(err => console.log("err", err))
+                
 
 
         } catch (error) {
             console.log(error)
+            if (error.response) {
+                setErrorMessage(error.response.data.message);
+            } else if (error.request) {
+                
+                setErrorMessage('Network error. Please try again later.');
+            } else {
+             
+                setErrorMessage('An unexpected error occurred.');
+            }
 
         }
 
@@ -84,7 +97,9 @@ const Signup = ({ navigation }) => {
                                 Sign Up to create an account
                             </Text>
                         </View>
-
+                        <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 5,marginLeft:4,paddingTop:5 }}>
+                            {errorMessage && <Text style={{ textAlign: 'centre', color: '#Ff0000', fontFamily: 'Montserrat',fontSize:15 }}>{errorMessage}</Text>}
+                        </View>
                         {/* form */}
                         <View style={{ paddingHorizontal: 22, paddingBottom: 10 }}>
                             <Input placeholder="Username" keyboard="default"
@@ -111,7 +126,7 @@ const Signup = ({ navigation }) => {
                         </View>
 
                         {/* Already have an account? Login */}
-                        <View style={{ marginTop: 43 }}>
+                        <View style={{ marginTop: 30 }}>
                             <Text style={{ color: '#6C6C6C', fontSize: 12, textAlign: 'center', fontFamily: 'Montserrat', }}>
                                 Already have an account?{' '}
                                 <Text style={{ color: '#0C0C0C', fontFamily: 'Montserrat', }} onPress={() => navigation.navigate('Login2')}>Login</Text>

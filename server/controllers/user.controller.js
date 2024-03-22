@@ -20,6 +20,10 @@ const register = async (req, res, next) => {
     if (userExits) {
         return next(new AppError("User Exists", 400))
     }
+    const userExits2 = await User.findOne({ username });
+    if (userExits2) {
+        return next(new AppError("Username Exists", 400))
+    }
 
     const user = await User.create({
         username,
@@ -56,7 +60,7 @@ const login = async (req, res, next) => {
     try {
         const user = await User.findOne({ email }).select("+password")
 
-        if (!user || !user.comparePassword(password)) {
+        if (!user || ! await user.comparePassword(password)) {
             return next(new AppError("Password and email not right", 400))
         }
 
