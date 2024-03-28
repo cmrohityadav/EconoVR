@@ -20,7 +20,9 @@ const userSchema=new Schema({
         required:[true,"email is required"],
         lowercase:true,
         trim:true,
-        unique:true
+        unique:[true,"Unique email required"],
+    
+        
     },
     password:{
         type:String,
@@ -47,6 +49,9 @@ role:{
 subscription:{
     id: String,
     status:String
+},
+otp:{
+    type:String
 }
 
 

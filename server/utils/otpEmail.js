@@ -3,7 +3,7 @@ import { mailAuth } from "./configMail.js";
 
 
 // async..await is not allowed in global scope, must use a wrapper
-const sendEmail = async function (email, subject, message) {
+const otpEmail = async function (email, subject, message) {
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
@@ -20,8 +20,8 @@ const sendEmail = async function (email, subject, message) {
     from:`"Value Vision: Admin-" ${process.env.SMTP_FROM_EMAIL}`, // sender address
     to: email, // user email
     subject: subject, // Subject line
-    html: message, // html body
+    html: `<p>Your Verification Otp is ${message}</p>`, // html body
   });
 };
 
-export default sendEmail;
+export default otpEmail;

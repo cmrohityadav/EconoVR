@@ -4,6 +4,7 @@ import cloudinary from "cloudinary"
 import fs from "fs"
 import sendEmail from "../utils/sendEmail.js"
 import crypto from "crypto"
+import otpEmail from "../utils/otpEmail.js"
 const cookieOptions = {
     maxAge: 24 * 60 * 60 * 1000,
     httpOnly: true,
@@ -277,4 +278,44 @@ const updateUser=async(req,res,next)=>{
 
 
 }
-export { register, login, logout, getProfile, forgotPassword, resetPassword ,changePassword,updateUser}
+
+const generateOtp=async(req,res,next)=>{
+    try {
+        const { email } = req.body;
+      const otp = String(Math.floor(100000 + Math.random() * 900000).toString()); // Generate 6-digit OTP
+    
+        // Save OTP in the database
+       const user= await User.findOneAndUpdate({ email }, { otp }, { upsert: true });
+       if(!user){
+        return next(
+            new AppError("User does not exists ",400)
+        )
+       }
+        await otpEmail(email," Verification Otp",otp)
+
+       return res.status(200).json({ success: true, message: 'OTP sent successfully' });
+
+    } catch (error) {
+        return next(
+            new AppError(error || "Otp lafda ", 500)
+        )
+    }
+    
+}
+
+const verifyOtp=async(req,res,next)=>{
+    const { email, otp } = req.body;
+  try {
+    const user = await User.findOne({ email, otp });
+    console.log(user)
+    if (user) {
+      res.json({ success: true, message: 'OTP verified successfully' });
+    } else {
+      res.status(400).json({ success: false, message: 'Invalid OTP' });
+    }
+  } catch (error) {
+    console.error('Error verifying OTP:', error);
+    res.status(500).json({ success: false, message: 'Failed to verify OTP' });
+  }
+}
+export { register, login, logout, getProfile, forgotPassword, resetPassword ,changePassword,updateUser,generateOtp,verifyOtp}

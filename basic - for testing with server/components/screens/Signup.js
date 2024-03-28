@@ -4,6 +4,11 @@ import Input from './Input';
 import axios from 'axios';
 
 const Signup = ({ navigation }) => {
+    const isValidEmail = (email) => {
+        // Regular expression for email pattern validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      };
     const [inputUsername, setInputUsername] = useState('');
     const [errorMessage, setErrorMessage] = useState("")
     const handleInputUsernameChange = (value) => {
@@ -12,7 +17,10 @@ const Signup = ({ navigation }) => {
     };
     const [inputEmail, setInputEmail] = useState('');
     const handleInputEmailChange = (value) => {
-        setInputEmail(value);
+        if(isValidEmail(value)){
+            setInputEmail(value);
+        }
+        
         setErrorMessage("")
     };
     const [inputPassword, setInputPassword] = useState('');
@@ -35,7 +43,7 @@ const Signup = ({ navigation }) => {
                     if (res) {
                      return   navigation.navigate('Login2')
                     }
-                })
+                }).catch((error)=> setErrorMessage(error.response.data.message))
                 
 
 
